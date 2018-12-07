@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="112.0" prefWidth="446.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.leam.omplepecs.OmplePECsController">
+   <children>
+      <Label text="Arxiu PEC">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="dir" layoutX="6.0" layoutY="25.0" prefHeight="27.0" prefWidth="400.0">
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Button layoutX="416.0" layoutY="25.0" mnemonicParsing="false" onAction="#getFile" prefHeight="27.0" prefWidth="11.0" text="..." />
+      <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="359.0" layoutY="68.0" mnemonicParsing="false" onAction="#pbGenerar" prefHeight="30.0" prefWidth="80.0" text="Generar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
