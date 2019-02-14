@@ -91,6 +91,8 @@ public class OmplePECsController implements Initializable {
 										for(int i=1; i<=len; i++){
 											c = c + Integer.toString(i);
 										}
+									} else {
+										c = String.join("", Collections.nCopies(len, "a"));
 									}
 		                		}
 								
@@ -112,7 +114,7 @@ public class OmplePECsController implements Initializable {
 	            
 	            Alert alert = new Alert(AlertType.INFORMATION);
 	            alert.setTitle("Omple PEC");
-	            alert.setHeaderText("ProcÃ©s finalitzat");
+	            alert.setHeaderText("Procés finalitzat");
 	            alert.setContentText("S'han creat els arxius:\n" + destFile.getAbsolutePath() + 
 	            		"\n" + txtFile.getAbsolutePath());
 	            alert.showAndWait();
